@@ -1,0 +1,49 @@
+join probalblity -> probability of two events occuring simultaneously.
+ex: raining and sun light
+at same time 
+
+Marginal propablity -> probalbliltity of an event irrespective of anything else.
+
+Conditional Probabilty -> probalbity of one event occuring in the presence of other
+
+JOINT PROBABILITY  FORMULA:
+1->  P(AB) = P(A) * P(B) ....  [A & B inddependent] [ P(A) marginal probability of A] [P(B) marginal probability of B]
+2->  P(AB) = P(A) * P(B|A) = P(B)*P(A|B) [A & B dependent][P(A|B) -> conditional probabilty of a given b]
+
+Bayes rules is derived from these two formula
+
+Bayesian Model =
+    P(C|x) = P(C) P(x|C) / P(x)
+where:
+P(C|x) = probablity of given sample 'x' belonging to class 'c'
+P(C) = probablity of 'x' in complete sample space/ training data
+P(x|C) = probablity of occurrences of 'x' when 'C' is given in training data
+P(x) = =probablity of 'C' in complete sample space/ training data
+
+target varable is given in training data
+
+P(C|(x1,x2...xn) = P(C|x1) * P(C|x2)....P(C|xn)
+
+used for Binary classification only
+used for bench marking
+
+Assumptition : Input consist of set of independent features/ columns
+
+Bayesian Probalbilistic Model is used
+Simple and effective 
+fast 
+Highly scalable
+not give very high performance
+
+Application : 
+->Automatic medial case classification / diagnosis
+->Incremental Learning
+->Probabilistic Learning
+
+
+Note : Naive bayes is generative model
+
+types of Naive bayes:-
+1. Gaussian Naive bayes : for numeric and large data.
+2. Multi Nominal Naive bayes : for categorical features.
+3. Bernoulli's Naive bayes : for binary variable.
