@@ -1,0 +1,62 @@
+Support Vector Machine :
+
+used only for binary classification or regression
+it can handle linear/ non linear boundary
+
+Goal: find the decision boundary between two classes with maximum margin
+
+Margin is based on samples close to the boundary. these samples are called "Support Vector"
+
+Margin :- Minimum distance between proposed boundary and closest point(s) from each class
+
+Which boundary to choose :
+single dataset may have multiple possible boundaries between two classes
+boundary with maximum margin is most beneficial
+such boundary avoids misclassification even if there is some deviation in new data from original data
+
+Binary classification:
+- Points which are on either side of the boundary are given to respective class
+- for new point class is predicted by using which side of the boundary it is.(0 or 1)
+
+Regression:
+- using decision boundary linear equation is formed
+- this is transformed into probability using logistic function
+- Output of logistic function is used for regression.
+
+
+svm  transforms the data in the hyperspace in a way that it can be linearly seperated.
+
+Transforms the data by adding non - linear features.
+(x^2, cos(x) , x^5, convert points in form of polar coordinates etc)
+this enables to have linear boundary between classes.
+
+KERENEL does this transform efficiently only once and not every iteration.
+types of kernel:
+1. Polynomial kernel
+2. RBF Kernel
+3. Linear Kernel
+
+RBF Kernel : - Radial basis Function/ Gaussian Kernel
+- Considers all posible polynomial of all degree representation of features.
+- Polynomial Features with higher degrees are given less importance.
+
+RBF(x,x') = exp(-gamma || x-x'||) = =exp(-gamma(summation(x-x')^2))
+[||x-x'|| -> second norm]
+[-gamma(summation(x-x')^2) -> similarity between x and x']
+
+
+SVM parameters 
+C : regularization parameter (l2 penalty)
+  -  higher value less regularization / more misclassification is allowed
+  -  Always Positive 
+advantage : when we keep high value of c it is faster
+
+Kernel : 'linear' , 'rbf'
+
+gamma : when kernel is rbf
+  -  how much each support vector impacts
+  -  less value : more support vectors are selected. (slow process).
+  -  High value : less support vectors are selected (fast process).
+  -  Need fine tuning.
+
+
