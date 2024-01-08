@@ -1,0 +1,83 @@
+related things : regularization , overfitting , underfitting , tuning.
+
+Bias in model:
+  -  Bias is assumptions
+  -  the more bias model is the more simple the model is.
+  -  we dont want a simple model we want a optimal model
+Variance in model:
+  -  Variance is how much model changes based on different training samples
+Components of error:
+  1.  Base line error: irreduceible error
+  2.  Error due to bias: more bias more error
+  3.  Error due to variance : complexity
+total loss = sum of these three components
+lost/error/cost function
+curve:
+
+lost curve or error curve
+
+x axis -> model complexicity (no of iteration , no of samples, no of features)
+model complexity increases form left to right
+
+y axis -> error or loss
+
+when traing is low error is high,
+after a certain point loss will occur again.error will increase again
+very high training also leads to error
+
+green colour curve : Generalization Error / Test error-> error on the test data
+
+yellow dotted curve : biase squared (total biased) ->as training increases bias reduces
+
+balck dotted curve : training error (error on training data) : more training less training error
+
+red dotted line : irreduceable error(error which can not be reduce)
+
+blue dotted curve :Variance -> more training high variance (complexity will increase)
+
+we want model between the purple dotted lines.
+
+we need model with not very low training and not very high training.
+
+there is no point where model is optimal
+look for a region i.e optimal region
+
+when bias is high -> increase training (increase no of features, no of iteration)(boosting)
+when variance is high -> decrease training(regularization)(sol: feature selection ,k flod cross validation)
+variance is aggregating of various model
+
+under-fit : when training loss and test (generalization) loss both are high
+over-fit : when training loss is low but test (generalization) loss is high
+
+optimal model: when training loss and test (generalization) loss both are low
+
+solution to underfitting : 
+  -  increase iteration of training
+  -  increase data -> rows or columns
+
+solution to overfitting :
+  -  Regularization (l1,l2 penalty or elastic net)
+  -  Ensemble learning 
+  -  k flod cross validation
+
+Bragging solve varaince problem:
+  -  bragging reduces variance
+  -  it creates n datasets from original using random selection
+      -  Randomly select row
+      -  Randomly select columns
+  -  this random select helps reduce variance problem.
+  -  it doesn't address bias
+    -  because there is not iterative imporvement
+
+boosting solve bias and varaiance both
+
+
+
+
+
+
+
+
+
+
+
