@@ -27,7 +27,7 @@ very high training also leads to error
 
 green colour curve : Generalization Error / Test error-> error on the test data
 
-yellow dotted curve : biase squared (total biased) ->as training increases bias reduces
+yellow dotted curve : bias squared (total biased) ->as training increases bias reduces
 
 balck dotted curve : training error (error on training data) : more training less training error
 
