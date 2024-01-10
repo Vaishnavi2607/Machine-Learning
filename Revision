@@ -1,0 +1,124 @@
+-  what is machine learning?
+Predicts the output 
+
+
+-  How a machine learns:
+Supervised : training with targetc variables (target variable should be given)
+Unsupervised: trainig only on data and target label not given
+
+Which learning straergy tot use to solve ml proble?
+for business 
+
+
+ML task;
+1.  Supervised:
+  -  Classification : Predict the classes (output variable is catergorical)
+  -  Regression : predict the number (output is number countinous variable)
+  -  Forcasting : Prediction of future
+  -  Recommendation system
+  -  Ouestion answering System
+  -  Summarization : summary of the text
+  -  Translation 
+
+2.  Unsupervised:
+  -  Clustering/grouping
+  -  Segmentation of data/images/customer Records
+  -  Outlier / Fraud Dectection
+  -  Association Rule Discovery /association rule mining
+
+Basic flow of Ml projr=ect?
+
+
+What are the types how we can split the data for training and testing?
+
+  1.  Random splti : random sampling is used.
+  2.  Stratify : Stratified random sampling (balance the target) 
+  3.  K fold cross validation : spliting the data in k parts and training is done k times
+
+Which strategy of splitting data to select:
+  Random split : if target is numeric
+  Stratified split: for classification data with imbalanace
+  K fold cross validation : used for model evaluation not for trainig model:
+
+
+Evaulation Parameter for classification :
+-  Recall -> TP / (TP + FN)
+-  true positive : Y_actual == 1 and  Y_predict ==1
+-  True Negative : Y_actual == 0 and  Y_predict ==0
+-  False Positive : Y_actual == 0 and  Y_predict ==1
+-  False Negative : Y_actual == 1 and  Y_predict ==0
+-  Precision = TP / (TP + FP)
+-  F1 Score = 2 * Precision * Recall / (Precision + Recall)
+-  Accuracy = (TP + TN ) / Total Samples
+-  Log loss (cross entropy) = - 1/N * sum(  yi * log(pi) + (1-yi) * log(1-pi))
+
+Evaulation Parameter for Regression :
+-  Mean Absolute Error
+-  Root Mean Squared Error 
+-  Coefficient of Determination / R-squared (r^2)  **
+
+Evaulation Parameter for Unsupervised learning:
+-  Silhouette Coefficient -> S= (b-a)/max(a,b) [a =cohesion b= seperation]
+-  Mutual Information : Measures information shared by two clustering algorithms 
+-  Adjusted Mutual Information (AMI): MI value adjusted for chance 
+-  Rand Index ( Based on Mr. Rand ) : Measure similarity between two clustering algorithms
+-  Adjusted Rand Index (ARI):  RI value is adjusted for chance
+-  Homogeneity: if all of its clusters contain only data points which are members of a single label from actual data.
+-  Completeness : if all the data points that are members of a given class are elements of the same cluster.
+-  V-measure : harmonic mean between homogeneity and completeness
+
+Preprocession steps:
+Handleing misssing values, convert cat/string columns to numbers.
+Outlier handling (imputation) , standarization / normalization /scaling /power transformation
+
+Duplicate handling , id columns removal , merging data from many files , columns which do not have any information , feature engineering(transforming feature from one to other)
+Outlier handleing method : IQR method 
+
+Feature Selection :
+  -  unsupervised : PCA principle Component analysis(training data give only x_train)
+  -  Supervised :  Model based (using Decision tree, linearSVM ,rfe(backward elimination/recurssive feature elimation)
+  -  Reguralization based feature selecton :lasso(L1 penalty is used), Ridge(l2 penlty is used) ,elastic net (both l1 l2)
+
+Unsupervised Learning models:
+
+1.  K means 
+Creates K cluster based on euclidiean distance
+k needs to bee given and fine tuned by using L-bow method
+Application : Segmentation of data
+
+2.  DBSCAN:
+Based on density cluster the point
+used eps and min sample to understand density of data
+high eps -> low density or scatter
+low eps -> gihg density cluserter
+Complex shapes of clustion can be formed
+outliers can be dectected  (noise boundary point , outliers)
+
+3. Hierarchical clustering/Dendrogram/Agglomerative Clustering
+
+first every point is a cluster and then nearest 2 cluster are merged step by step to from a single cluster
+Bottom up apporach is used
+Distance between clusters is found by linkage -> Ward , single complete average
+Application : Descriptive Analysis.
+
+
+Supervised earning models:
+1.  Discriminative models : model which create linear / non linear boundaries (ex logistic regression, linear SVM)
+2.  Generative model find / learn pattern of data and don't create boundaries (naive bayes)
+3.  Decision tree: 
+CART :classification and regression trees 
+uses binary tree
+At every node of the tree is decision is taken which splits the data in max two parts
+Leaf node contains Prediction  / decision (average value in regression / class name of classification)
+
+
+
+
+
+
+
+
+
+
+
+
