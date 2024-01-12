@@ -1,0 +1,41 @@
+Neural Natwork:
+
+Network of neuron with multiple layers
+
+
+Types:
+Supervised learning:
+1.  Neural natwork / Simple neural network (snn) / neural network with Back propagation
+2.  CNN Convulation Neural Network
+3.  RNN Recurrent Neural Network
+4.  LSTM long short memory neural network
+
+Unsupervised learning:
+
+
+
+SINGLE NEURON ARCHITECTURE:
+also known as PERCEPTON or svm machine.
+
+two parts of neuron
+1.summation : every input is assigned some weightage 
+X= b0 + w1x1 + w2x2 + ..... + wnxn 
+sum all multiplication of weightage of inputs and biased
+2.activation function: what will the output based on summation. transform summation value to y
+y=f(X)
+where X= b0 + w1x1 + w2x2 + ..... + wnxn 
+
+
+Intutuion of multilayer nn architecture:
+input -> Gross Feature -> Subtle -> Output Formating -> output
+all layers between input and output id hidden layer
+
+input layer : (placeholder) takes input from user
+output layer : gives the output to the user
+Gross layers : some extract gross features
+Subtle layers : exart detailed features
+output formatting : formatting the output
+
+
+
+
