@@ -1,0 +1,7 @@
+cost function :  is used to measure just how wrong the model is in the finding a relation betn the independent and dependent variable. (J)
+for linear regression : cost function = min of root of mean squared error = predicted - actual values
+for neural network :  sum of error in each layer
+
+Gradient Decent : alogorithm used to optimized cost function or error of model
+                  find min value of error possible in model
+
